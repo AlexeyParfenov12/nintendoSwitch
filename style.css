@@ -1,0 +1,461 @@
+.opac {
+  opacity: 0.5;
+}
+
+article {
+  position: relative;
+  font-size: 95vmin;
+  width: 1em;
+  aspect-ratio: 2528/1076;
+  /* background-color: #f002; */
+}
+
+article *,
+article *::before,
+article *::after {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.pg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://static.insales-cdn.com/images/products/1/4033/949948353/d9e0dcf9-22bc-4780-878d-35f75d7bfe7b.webp);
+  background-size: cover;
+  opacity: 0.00005;
+}
+
+.controller {
+  width: 13.6%;
+  height: 96.8%;
+  top: 2.9%;
+  left: 0.5%;
+  background: rgb(2, 193, 226);
+  border-radius: 0.09em 0.004em 0.004em 0.09em;
+  /* opacity: 0.5; */
+}
+
+.controller.left{
+    box-shadow: 
+    inset 0.007em -0.014em 0.019em -0.01em rgb(0, 0, 0),
+    inset -0.01em 0.00em 0.003em -0.007em rgb(0, 0, 0),
+    inset 0.01em 0.013em 0.006em -0.007em rgb(2, 193, 226),
+    inset 0.0em 0.016em 0.006em -0.007em rgb(255, 255, 255);
+    
+}
+
+.controller.right {
+  left: auto;
+  right: 0.7%;
+  border-radius: 0.004em 0.09em 0.09em 0.004em;
+  background: #fd5c50;
+  box-shadow: 
+    inset -0.002em -0.014em 0.019em -0.01em rgb(0, 0, 0),
+    inset -0.01em 0.015em 0.006em -0.007em #fd5c50,
+    inset 0.0em 0.016em 0.006em -0.007em rgb(255, 255, 255);
+  /* opacity: 0.5; */
+}
+
+.body {
+  bottom: 0.2%;
+  left: 14.1%;
+  background: #050505;
+  width: 71.6%;
+  height: 96.9%;
+  border-radius: 0.002em;
+  background-image: linear-gradient(to top left, transparent 60%, rgba(255, 255, 255, 0.4) 70%);
+  box-shadow:
+    inset 0 0.0035em 0.005em #000,
+    inset 0 0.0115em 0.005em #fff,
+    inset 0.0em -0.232em 0.0075em -0.23em rgb(0, 0, 0),
+    inset 0.0em -0.238em 0.0075em -0.23em rgb(227, 227, 227, 0.5);
+
+  /*   opacity: 0.5; */
+}
+
+.frame {
+  top: 3.4%;
+  left: 2.8%;
+  background: #050505;
+  height: 93.2%;
+  width: 94.3%;
+  border-radius: 0.002em;
+  border: 0.0011em solid #000;
+  background-image: linear-gradient(to top left, transparent 60%, rgba(255, 255, 255, 0.4) 70%);
+  box-shadow:
+    inset -0.001em -0.002em 0.0045em rgba(255, 255, 255, 0.4);
+
+}
+
+.screen {
+  top: 4%;
+  left: 3.5%;
+  /* background: #194ffc; */
+  height: 92%;
+  width: 93.3%;
+  border-radius: 0.002em;
+  background-image: linear-gradient(to bottom right, #194ffc, rgb(184, 0, 184));
+}
+
+.screen2 {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.002em;
+  background-image: linear-gradient(to top left, transparent 60%, rgba(255, 255, 255, 0.4) 70%);
+}
+
+.circle1 {
+  top: 0%;
+  left: -15%;
+  height: 80%;
+  width: 50%;
+  border-radius: 50%;
+  background: #3ac5fd;
+  opacity: 0.6;
+  filter: blur(10px);
+  clip-path: polygon(30% 0%,
+      /* новая левая верхняя точка */
+      200% 0%,
+      /* правая верхняя */
+      200% 200%,
+      /* правая нижняя */
+      30% 200%
+      /* новая левая нижняя */
+    );
+}
+
+.circle2 {
+  top: 40%;
+  left: -12%;
+  height: 60%;
+  width: 40%;
+  border-radius: 50%;
+  background: #1ebeaa;
+  opacity: 0.8;
+  filter: blur(20px);
+  clip-path: polygon(30% 0%,
+      /* новая левая верхняя точка */
+      100% -100%,
+      /* правая верхняя */
+      200% 100%,
+      /* правая нижняя */
+      30% 100%
+      /* новая левая нижняя */
+    );
+}
+
+.circle3 {
+  top: 30%;
+  left: 30%;
+  height: 65%;
+  width: 40%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  filter: blur(5px);
+}
+
+.circle4 {
+  top: 20%;
+  left: 55%;
+  height: 60%;
+  width: 35%;
+  border-radius: 50%;
+  background: rgba(255, 92, 77, 0.5);
+  filter: blur(20px);
+}
+
+.circle5 {
+  top: -10%;
+  left: 75%;
+  height: 50%;
+  width: 30%;
+  border-radius: 50%;
+  background: rgba(253, 221, 79, 0.7);
+  filter: blur(20px);
+  clip-path: polygon(83% 20%,
+      /* точка выше и правее левого угла */
+      82% 400%,
+      /* правый верх */
+      30% 400%,
+      /* правый низ */
+      -300% 20%
+      /* левый низ (остаётся) */
+    );
+}
+
+.circle6 {
+  top: 0%;
+  left: 35%;
+  height: 50%;
+  width: 30%;
+  border-radius: 50%;
+  background: rgba(235, 126, 3, 0.7);
+  filter: blur(20px);
+}
+
+.circle7 {
+  top: 60%;
+  left: 65%;
+  height: 50%;
+  width: 30%;
+  border-radius: 50%;
+  background: rgba(235, 126, 3, 0.7);
+  filter: blur(20px);
+  clip-path: polygon(200% 80%,
+      /* новая левая верхняя точка */
+      200% -200%,
+      /* правая верхняя */
+      0% 0%,
+      /* правая нижняя */
+      -100% 80%
+      /* новая левая нижняя */
+    );
+}
+
+.nintendo {
+  /* background: white; */
+  height: 45%;
+  width: 22%;
+  top: 20%;
+  left: 38%;
+}
+
+.left-nint {
+  width: 50%;
+  height: 100%;
+  border-radius: 0.04em 0 0 0.04em;
+  border: 0.0135em solid white;
+  background-image: radial-gradient(circle at 50% 25%, white 13%, transparent 14%);
+}
+
+.right-nint {
+  left: 60%;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 0.04em 0.04em 0;
+  /* border: 0.0135em solid white; */
+  /* background: white; */
+  background-image: radial-gradient(circle at 50% 55%, transparent 15%, white 16%);
+
+}
+
+.text-nintendo {
+  color: white;
+  font-size: 0.026em;
+  top: 70%;
+  left: 33.5%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.40em;
+  font-weight: 550;
+}
+
+.text-switch {
+  color: white;
+  font-size: 0.045em;
+  top: 77%;
+  left: 33%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+}
+
+.left-stick-one{
+  top: 17%;
+  left: 29%;
+  height: 16%;
+  width: 49%;
+  /* background: #000; */
+  border-radius: 50%;
+  border: 0.001em  rgb(0, 0, 0);
+  background-image: linear-gradient(to top, rgb(27, 27, 27) 40%, rgb(255, 255, 255));
+  box-shadow: 
+    inset 0.000em 0.006em 0.024em black,
+    0.000em -0.003em 0.005em black,
+    0.000em 0.01em 0.04em -0.01em black;
+
+}
+
+.left-stick-two{
+  top: 15%;
+  left: 15%;
+  height: 70%;
+  width: 70%;
+  background: #232323;
+  border-radius: 50%;
+  border: 0.001em solid rgb(0, 0, 0);
+  background-image: linear-gradient(to top, rgb(27, 27, 27) 10%, rgb(255, 255, 255, 0.2));
+  box-shadow: 
+  0.000em 0.003em 0.004em rgb(255, 255, 255, 0.5),
+  0.000em -0.003em 0.001em rgb(0, 0, 0)
+}
+
+.right-stick-one{
+  top: 45%;
+  left: 22%;
+  height: 16%;
+  width: 49%;
+  /* background: #000; */
+  border-radius: 50%;
+  border: 0.001em  rgb(0, 0, 0);
+  background-image: linear-gradient(to top, rgb(27, 27, 27) 40%, rgb(255, 255, 255));
+  box-shadow: 
+    inset 0.000em 0.006em 0.024em black,
+    0.000em -0.003em 0.005em black,
+    0.000em 0.01em 0.04em -0.01em black;
+
+}
+
+.right-stick-two{
+  top: 15%;
+  left: 15%;
+  height: 70%;
+  width: 70%;
+  background: #232323;
+  border-radius: 50%;
+  border: 0.001em solid rgb(0, 0, 0);
+  background-image: linear-gradient(to top, rgb(27, 27, 27) 10%, rgb(255, 255, 255, 0.2));
+  box-shadow: 
+  0.000em 0.003em 0.004em rgb(255, 255, 255, 0.5),
+  0.000em -0.003em 0.001em rgb(0, 0, 0)
+}
+
+.top-button{
+  top: 42%;
+  left: 43%;
+  height: 7%;
+  width: 23%;
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset 0.0em 0.0007em 0.00em rgb(255, 255, 255),
+    0.0em 0.002em 0.001em rgba(0, 0, 0),
+    inset 0.0em -0.002em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.top-button .tr{
+  background: #000000;
+  width: 35%;
+  height: 35%;
+  top: 30%;
+  left: 30%;
+  clip-path: polygon(100% 100%,
+      /* новая левая верхняя точка */
+      50% 0%,
+      /* правая верхняя */
+      50% 0%,
+      /* правая нижняя */
+      0% 100%
+      /* новая левая нижняя */
+    );
+}
+
+.right-button{
+  top: 49%;
+  left: 67%;
+  height: 7%;
+  width: 21%;
+  transform: rotate(90deg);
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset 0.0007em 0.00em 0.00em rgb(255, 255, 255),
+    0.002em 0.00em 0.001em rgba(0, 0, 0),
+    inset -0.002em 0.00em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.right-button .tr{
+  background: #000000;
+  width: 35%;
+  height: 35%;
+  top: 30%;
+  left: 30%;
+  clip-path: polygon(100% 100%,
+      /* новая левая верхняя точка */
+      50% 0%,
+      /* правая верхняя */
+      50% 0%,
+      /* правая нижняя */
+      0% 100%
+      /* новая левая нижняя */
+    );
+}
+
+.left-button{
+  top: 49%;
+  left: 21%;
+  height: 7%;
+  width: 21%;
+  transform: rotate(270deg);
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset -0.0007em 0.00em 0.00em rgb(255, 255, 255),
+    -0.002em 0.00em 0.001em rgba(0, 0, 0),
+    inset -0.002em 0.00em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.left-button .tr{
+  background: #000000;
+  width: 35%;
+  height: 35%;
+  top: 30%;
+  left: 30%;
+  clip-path: polygon(100% 100%,
+      /* новая левая верхняя точка */
+      50% 0%,
+      /* правая верхняя */
+      50% 0%,
+      /* правая нижняя */
+      0% 100%
+      /* новая левая нижняя */
+    );
+}
+
+.bottom-button{
+  top: 57%;
+  left: 43%;
+  height: 7%;
+  width: 23%;
+  transform: rotate(180deg);
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset 0.0em -0.0007em 0.00em rgb(255, 255, 255),
+    0.0em -0.002em 0.001em rgba(0, 0, 0),
+    inset 0.0em 0.002em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.bottom-button .tr{
+  background: #000000;
+  width: 35%;
+  height: 35%;
+  top: 30%;
+  left: 30%;
+  clip-path: polygon(100% 100%,
+      /* новая левая верхняя точка */
+      50% 0%,
+      /* правая верхняя */
+      50% 0%,
+      /* правая нижняя */
+      0% 100%
+      /* новая левая нижняя */
+    );
+}
