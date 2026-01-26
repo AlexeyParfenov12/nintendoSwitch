@@ -49,10 +49,11 @@ article *::after {
 
 .controller.right {
   left: auto;
-  right: 0.7%;
+  right: 0.75%;
   border-radius: 0.004em 0.09em 0.09em 0.004em;
   background: #fd5c50;
   box-shadow: 
+    inset 0.003em -0.00em 0.003em 0.000em rgb(0, 0, 0),
     inset -0.002em -0.014em 0.019em -0.01em rgb(0, 0, 0),
     inset -0.01em 0.015em 0.006em -0.007em #fd5c50,
     inset 0.0em 0.016em 0.006em -0.007em rgb(255, 255, 255);
@@ -459,3 +460,164 @@ article *::after {
       /* новая левая нижняя */
     );
 }
+
+
+.right-top-button{
+  top: 15%;
+  left: 35%;
+  height: 7%;
+  width: 22%;
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset 0.0em 0.0007em 0.00em rgb(255, 255, 255),
+    0.0em 0.002em 0.001em rgba(0, 0, 0),
+    inset 0.0em -0.002em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.right-top-button .x{
+  color: rgb(255, 255, 255);
+  font-size: 0.015em;
+  top: 23%;
+  left: 32%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.right-right-button{
+  top: 22%;
+  left: 59%;
+  height: 7%;
+  width: 21%;
+  background: #3e3e3e;
+  border-radius: 50%;
+  box-shadow:
+    inset 0.00em 0.0007em 0.00em rgb(255, 255, 255),
+    0.00em 0.002em 0.001em rgba(0, 0, 0),
+    inset 0.00em -0.002em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.right-right-button .a{
+  color: rgb(255, 255, 255);
+  font-size: 0.015em;
+  top: 23%;
+  left: 32%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.right-left-button{
+  top: 22%;
+  left: 12%;
+  height: 7%;
+  width: 21%;
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset 0.00em 0.0007em 0.00em rgb(255, 255, 255),
+    0.00em 0.002em 0.001em rgba(0, 0, 0),
+    inset 0.00em -0.002em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.right-left-button .y{
+  color: rgb(255, 255, 255);
+  font-size: 0.015em;
+  top: 23%;
+  left: 32%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.right-bottom-button{
+  top: 29%;
+  left: 35%;
+  height: 7%;
+  width: 23%;
+  background: #3e3e3e;
+  border-radius: 50%;
+  /* border: 0.002em solid black; */
+  box-shadow:
+    inset 0.0em 0.0007em 0.00em rgb(255, 255, 255),
+    0.0em 0.002em 0.001em rgba(0, 0, 0),
+    inset 0.0em -0.002em 0.002em rgba(0, 0, 0),
+    0.0em 0.00em 0.005em 0.002em rgba(0, 0, 0);
+
+}
+
+.right-bottom-button .b{
+  color: rgb(255, 255, 255);
+  font-size: 0.015em;
+  top: 23%;
+  left: 32%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.rectangle-button{
+  background: #3e3e3e;
+  width: 16%;
+  height: 2%;
+  top: 9%;
+  left: 75%;
+  border: 0.001em solid rgb(0, 0, 0, 0.1);
+  box-shadow: 
+    0.0em 0.0em 0.003em 0.0em rgba(0, 0, 0);
+}
+
+.cube-button{
+  background: #3e3e3e;
+  width: 18%;
+  height: 6%;
+  top: 69%;
+  left: 62%;
+  border: 0.001em solid rgb(0, 0, 0, 0.1);
+  box-shadow: 
+    0.0em 0.0em 0.003em 0.0em rgba(0, 0, 0);
+}
+
+.circle-cub{
+  background: #3e3e3e;
+  width: 84%;
+  height: 75%;
+  top:10%;
+  left:6%;
+  border-radius: 50%;
+  box-shadow: inset 0.0em 0.0007em 0.004em rgb(0, 0, 0);
+}
+
+/* .button{
+  background: #3e3e3e;
+  width: 100%;
+  height: 20%;
+  top:-1%;
+  left: 3%;
+  border-radius: 75% 0 0 0%;
+} */
+
+.cross {
+  background: #3e3e3e;
+  width: 17%;
+  height: 6%;
+  top: 7%;
+  left: 8%;
+  clip-path: polygon(
+    0% 65%,
+    35% 65%,
+    35% 100%,
+    65% 100%,
+    65% 65%,
+    100% 65%,
+    100% 35%,
+    65% 35%,
+    65% 0%,
+    35% 0%,
+    35% 35%,
+    0% 35%,
+    0% 65%
+  );
+  box-shadow: inset 0.0em 0.0007em 0.004em rgb(0, 0, 0);
+}
+
